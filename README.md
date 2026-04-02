@@ -40,7 +40,7 @@ Idea Funder is a full-stack, role-based platform built to bridge the gap between
 ## 🎥 Demonstration & Documentation
 The core code for this platform is available in this repository. 
 
-**[Click here to access the project video and full academic report](https://drive.google.com/drive/folders/12gHW464GHZrM2i0tFdNullk_If7MwMuR?usp=sharing)**
+**[Click here to access the project video and full academic report][(https://drive.google.com/drive/folders/12gHW464GHZrM2i0tFdNullk_If7MwMuR?usp=sharing)](https://drive.google.com/drive/folders/1O7_ONclod0ZyxraT2ZCToWFUYS_TBE3V?usp=sharing)**
 
 The provided Google Drive folder contains:
 * **A working video demonstration** showcasing the role-based dashboards, the verification workflow, and the swipe-based investor UI in action.
