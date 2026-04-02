@@ -1,0 +1,226 @@
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  border-top: 5px solid #28a745;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+  font-weight: 600;
+  font-size: 28px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.profile-form h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #28a745;
+  border-radius: 2px;
+}
+
+.profile-form label {
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+.profile-form input, 
+.profile-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
+
+.profile-form input:read-only {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.profile-form textarea {
+  height: 120px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.profile-form input[type="file"] {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px dashed #28a745;
+}
+
+.profile-form input[type="file"]:hover {
+  background-color: #f0f9f0;
+}
+
+.profile-form button {
+  margin-top: 30px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.profile-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.profile-form button[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.profile-form button[type="submit"]:disabled {
+  background-color: #8bc34a;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.back-button {
+  background-color: #000 !important;
+  color: white !important;
+  margin-top: 15px !important;
+}
+
+.back-button:hover {
+  background-color: #333 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-message {
+  color: #0288d1;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #e1f5fe;
+  margin: 15px 0;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #ffebee;
+  margin: 15px 0;
+}
+
+.success-message {
+  color: #388e3c;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #e8f5e9;
+  margin: 15px 0;
+}
+
+/* Form field groups with consistent spacing */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .profile-container {
+    max-width: 90%;
+    padding: 30px;
+  }
+  
+  .profile-form h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    width: 95%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+  
+  .profile-form h2 {
+    font-size: 22px;
+  }
+  
+  .profile-form input,
+  .profile-form textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+  
+  .profile-form button {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    width: 100%;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+  }
+  
+  .profile-form h2 {
+    font-size: 20px;
+  }
+  
+  .profile-form label {
+    font-size: 14px;
+  }
+  
+  .profile-form input,
+  .profile-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .profile-form button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

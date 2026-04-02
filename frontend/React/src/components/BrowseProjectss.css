@@ -1,0 +1,178 @@
+.browse-projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .browse-projects-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .project-card button:hover {
+    background-color: #218838;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .adminshow-project-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.fund-btn {
+    background-color: #28a745; /* Green for funding action */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fund-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    background-color: #6c757d; /* Grey for back action */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+/* CSS for Filters */
+/* Filter Container */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* Category Filter Section */
+.filter-section {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-section label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.category-filter {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 220px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.category-filter:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Clear Button */
+.clear-btn {
+  margin-top: 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.clear-btn:hover {
+  background-color: #e63946;
+}
+
+/* Price Filter */
+.price-filter {
+  padding: -2px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.price-filter:focus {
+  border-color: #007bff;
+  outline: none;
+}

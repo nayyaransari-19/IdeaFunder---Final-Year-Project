@@ -1,0 +1,255 @@
+.adminshow-project-submissions-section {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.adminshow-project-submissions-section h3 {
+    font-size: 30px;
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Project Details */
+.adminshow-project-details {
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.adminshow-project-header h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.adminshow-project-body p {
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    line-height: 1.8;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    word-break: break-word;
+    max-width: 1200px;
+    min-width: 1200px; /* Optional: limit max width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Project Files Section */
+.adminshow-project-files {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.adminshow-project-files div {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.adminshow-project-files a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.adminshow-project-files a:hover {
+    color: #388e3c;
+}
+
+/* Download icon */
+.file-icon {
+    font-size: 22px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+.file-icon:hover {
+    color: #388e3c;
+}
+
+.adminshow-project-files img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.adminshow-project-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.approve-btn, .reject-btn, .back-btn {
+    padding: 14px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.approve-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #388e3c;
+}
+
+.reject-btn {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 15px;
+}
+
+.reject-btn:hover {
+    background-color: #c0392b;
+}
+
+.back-btn {
+    background-color: #3498db;
+    color: white;
+    margin-left: 15px;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .adminshow-project-submissions-section {
+        padding: 30px;
+    }
+
+    .adminshow-project-header h4 {
+        font-size: 24px;
+    }
+
+    .adminshow-project-body p {
+        font-size: 16px;
+    }
+
+    .adminshow-project-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .approve-btn, .reject-btn, .back-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .adminshow-project-details {
+        padding: 20px;
+    }
+
+    .adminshow-project-body p {
+        font-size: 16px;
+    }
+
+    .approve-btn, .reject-btn, .back-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    .adminshow-project-files div {
+        max-width: 100%;
+    }
+}
+/* Container for UI/UX Preview */
+.ui-ux-preview-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.ui-ux-preview-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ui-ux-preview-container img:hover {
+    transform: scale(1.03);
+}
+
+/* Text overlay on top of the image */
+.ui-ux-preview-container .preview-label {
+    
+    top: 15px;
+    left: 15px;
+    
+    color: #000000;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+   
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ui-ux-preview-container {
+        max-width: 100%;
+    }
+
+    .ui-ux-preview-container .preview-label {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

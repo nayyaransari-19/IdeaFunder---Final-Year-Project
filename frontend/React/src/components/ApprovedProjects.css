@@ -1,0 +1,220 @@
+/* General container styling */
+.approved-projects-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading styling */
+.approved-projects-container h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Project list styles */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-list span {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.project-list button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-list button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Project details section */
+.adminshow-project-details {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.adminshow-project-header h4 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.adminshow-project-header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Project details styling */
+.adminshow-project-body p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.adminshow-project-body strong {
+    color: #333;
+}
+
+/* Project files */
+.adminshow-project-files {
+    margin-top: 20px;
+}
+
+.adminshow-project-files div {
+    margin-bottom: 15px;
+}
+
+.adminshow-project-files a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.adminshow-project-files a:hover {
+    color: #0056b3;
+}
+
+/* UI/UX Preview */
+.ui-ux-preview-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ui-ux-preview-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+/* Action buttons */
+.adminshow-project-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-btn {
+    background: #6c757d;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .approved-projects-container {
+        padding: 15px;
+    }
+
+    .project-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-list span {
+        margin-bottom: 10px;
+    }
+
+    .project-list button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .adminshow-project-details {
+        padding: 20px;
+    }
+
+    .back-btn {
+        width: 100%;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.back-button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+    margin-top: 40px; /* Space above the button */
+}
+
+.back-button {
+    background-color: #6c757d; /* Gray background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+

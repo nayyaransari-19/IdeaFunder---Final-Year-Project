@@ -1,0 +1,554 @@
+.landing-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-button {
+  background: #28a745;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-right: 100px; /* Reset any extra margin */
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px; /* Adjust padding to fit within the viewport */
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.logo-image:hover {
+  transform: rotate(360deg);
+  opacity: 0.8;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  color: #000000;
+  z-index: 1000; /* Ensures it stays on top */
+  margin-top: 22px;
+}
+
+.logo-text:hover {
+  color: #28a745;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+.hero {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-position 0.5s ease, transform 0.5s ease;
+}
+
+.hero:hover {
+  background-position: top;
+  transform: scale(1.02);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 1s ease-out;
+}
+
+.get-started-button {
+  position: relative;
+  z-index: 2;
+  background: #28a745;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started-button:hover {
+  transform: scale(1.1);
+  background-color: #218838;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.share-idea {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 30px 0;
+  animation: slideIn 1s ease-out;
+}
+
+.share-idea h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 15px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.share-idea p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.send-project-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-project-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.send-project-button {
+  background: #ffffff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.projects:hover {
+  transform: translateY(-10px);
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  text-align: left;
+}
+
+.testimonial-image-container {
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testimonial-text p {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-text h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-text span {
+  font-size: 1rem;
+  color: #777;
+}
+
+.green {
+  color: #28a745;
+}
+
+.pre-footer {
+  background-color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  background: #ffffff;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo-image {
+  width: 200px;
+  height: auto;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter label {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.subscribe-button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #28a745;
+}
+
+.footer span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+
+/* ✅ Navigation Bar Responsive Fix */
+@media (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 1000;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding-top: 100px; /* Prevents navbar from covering content */
+  }
+}
+
+/* ✅ For tablets and medium screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo-container {
+    display: none; /* Hides logo to prevent navbar misalignment */
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding-top: 120px;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .get-started-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+}
+
+/* ✅ For smaller mobile screens (iPhone SE, older models) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .get-started-button {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-text p {
+    font-size: 1rem;
+  }
+
+  .testimonial-image-container {
+    width: 100px;
+    height: 150px;
+  }
+
+  .footer span {
+    font-size: 0.9rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Fixing Button Responsiveness */
+@media (max-width: 768px) {
+  .get-started-button,
+  .send-project-btn,
+  .subscribe-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ensure buttons inside navigation are properly spaced */
+  .nav-button {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+/* ✅ Fix Navigation & Button Position */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .get-started-button {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+}
