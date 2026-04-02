@@ -1,0 +1,30 @@
+.project-details-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .project-table {
+    margin: 20px 0;
+  }
+  
+  .project-table h2 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,174 @@
+.user-management-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.user-card:hover {
+    background: #f9f9f9;
+}
+
+.user-info h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+}
+
+.user-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.user-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background: #28a745;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #0f501e;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.edit-form input, .edit-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.loading-message, .error-message {
+    text-align: center;
+    color: #dc3545;
+    font-size: 1.2rem;
+}
+.back-button-container {
+    margin-bottom: 20px; /* Space below the button */
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+}
+
+.back-button {
+    background-color: #6c757d; /* Gray background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268; /* Slightly darker gray on hover */
+}
+.delete-toast-progress {
+    background-color: #ffcc00; /* You can adjust this to match your theme */
+}
+
+/* Custom styling for delete confirmation toast */
+.delete-toast-progress {
+    background-color: #ffcc00; /* Customize the background color for delete confirmation */
+}
+
+/* Custom progress bar style */
+/* Custom progress bar style */
+.delete-toast-progress {
+    background-color: #ffcc00; /* Yellow background for delete confirmation */
+}
+
+/* Confirm button style (Green) */
+.confirm-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Cancel button style (Red) */
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
